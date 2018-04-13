@@ -13,9 +13,9 @@ Python
 * Pandas
 * Numpy
 * Matplotlib
-* (SqlAlchemy)[https://github.com/zzzeek/sqlalchemy]
-* (SKLearn)[https://github.com/scikit-learn/scikit-learn]
-* (NetworkX)[https://github.com/networkx/networkx]
+* [SqlAlchemy](https://github.com/zzzeek/sqlalchemy)
+* [SKLearn](https://github.com/scikit-learn/scikit-learn)
+* [NetworkX](https://github.com/networkx/networkx)
 
 ## Sample Code
 
