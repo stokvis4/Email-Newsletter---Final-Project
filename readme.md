@@ -7,10 +7,17 @@ For this final project, I wanted to create a suite of solutions that an email ne
 
 
 
+## Packages & Tools Used
+PostgreSQL
+Python
+	* Pandas
+	* Numpy
+	* Matplotlib
+	* SqlAlchemy
+	* SKLearn
+	* NetworkX
 
-```
-Code Extracts
-```
+## Sample Code
 
 ### SQL Querying
 
@@ -85,5 +92,5 @@ for row, ser in df_pivot_last_emails_dropped_pivot.iterrows():
 
 
 
-### Presentation & Video
+## Presentation & Video
 Please take a look through the presentation file [here](https://github.com/stokvis4/projectKojak/blob/master/presentation/projectKojak.pdf) as well as the video of the D3.js animation [here](https://github.com/stokvis4/projectKojak/blob/master/presentation/ReferralNetDemo.mov)
