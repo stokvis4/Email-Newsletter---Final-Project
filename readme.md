@@ -13,9 +13,9 @@ Python
 * Pandas
 * Numpy
 * Matplotlib
-* SqlAlchemy
-* SKLearn
-* NetworkX
+* (SqlAlchemy)[https://github.com/zzzeek/sqlalchemy]
+* (SKLearn)[https://github.com/scikit-learn/scikit-learn]
+* (NetworkX)[https://github.com/networkx/networkx]
 
 ## Sample Code
 
@@ -23,8 +23,8 @@ Python
 
 Goal: Pull user information, derive a reader's location based on readership and ultimately link it back upon itself connecting user behavior of the referrer with the referred.
 Breaking down the Query:
-* t = table that contains that groups user's readership and gets a count of what 'region' shows up most
-* s = table that takes that subquery and assigns a row number as 'rn'
+* t = table that contains that groups user's readership and gets a count of 'region' as 'region_count'
+* s = table that takes that subquery and assigns a row number as 'rn' for each email address by 'region_count'
 * subquery = table that takes s and joins it with a new user information table
 * output = table that combines information about an individual and links that individual to the person who referred them if there was a referrer
 
