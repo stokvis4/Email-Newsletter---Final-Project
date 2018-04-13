@@ -2,8 +2,12 @@
 
 For this final project, I wanted to create a suite of solutions that an email newsletter startup could use going forward. I was fortunate enough to have access to a real database where I could try many different approaches. The final products I created are the following:
 * Referral Network Analysis
+	* This D3.js tool allows a user to search for individual and look at their referral network. It provides information such as direct referrals, indirect referrals (direct referrals who referred others) and a referral network depth. Using these features it allow provides a score that rewards deeper networks. 
 * Referral Prediction
+	* I attempted to predict whether a user would refer another user. Ultimately, I found that there is a direct correlation between readership of the first 10 emails and referral rate.
 * Churn Prediction & Score
+	* Using an ensemble model of Random Forest, Adaboost, Naive Bayes, and KNN, I produced a score of likelihood to churn based on user behavior.
+
 
 
 
