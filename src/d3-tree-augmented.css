@@ -1,0 +1,183 @@
+
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 3px;
+}
+
+.node text {
+  font: 12px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2px;
+}
+/* Dropdown Button */
+.dropbtn {
+  background-color: #005ab6;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #023a7e;
+}
+
+/* The search field */
+#myInput {
+  border-box: box-sizing;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+/* The search field when it gets focus/clicked on */
+#myInput:focus {outline: 3px solid #ddd;}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  float: right;
+  margin-top: 20px;
+  margin-right: 125px;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.boxed {
+  border: 1px solid blue;
+  width: 1200px;
+  margin-top: 20px;
+  padding: 20px;
+  border-style: dashed;
+  border-radius: 16px;
+  
+
+}
+.expcol {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 100px;
+}
+.stackedbutton{
+  display: block;
+  float: right;
+}
+.score {
+  width: 250px; 
+  display: inline-block; 
+  margin-top: 0px;  
+  margin-bottom: 0px;
+  vertical-align: middle;
+}
+.refer_score{
+  width: 200px; 
+  display: inline-block; 
+  margin-top: 0px;  
+  margin-bottom: 0px;
+  vertical-align: middle;
+}
+.count_output{
+  width: 50px; 
+  display: inline-block;
+  margin-top: 0px;  
+  margin-bottom: 0px;
+  vertical-align: middle;
+
+}
+.crossheader{
+  background-color: #B0C4DE;
+  height: 90px
+}
+.title{
+  width: 1000px; 
+  display: inline-block;
+  padding-top: 20px; 
+  padding-bottom: 0px;
+  margin: 0px;
+  margin-left: 20px;
+  font-size: 40px;
+}
+.bar{
+  color:  blue;
+  font-size: 48px;
+  width: 40px;
+}
+.instructions{
+  font-size: 18px;
+  padding: 25px;
+  cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+body{
+  font-family: Verdana;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}

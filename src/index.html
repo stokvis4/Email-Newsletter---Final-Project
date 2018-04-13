@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<head>
+  <title>Referral Network</title>
+  <link rel="shortcut icon" href="data:image/png;base64,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">
+
+  <link rel="stylesheet" type="text/css" href="d3-tree-augmented.css">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src='d3-tree-augmented.js'></script>
+</head>
+<meta charset="UTF-8">
+
+<body>
+  <!-- load the d3.js library --> 
+
+  
+
+
+<div class="crossheader">
+  <h1 class="title">Referral Network Explorer</h1>
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Ambassador Search</button>
+    <div id="myDropdown" class="dropdown-content">
+      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+      <a onClick = "callTree('/Networks/TreeJsons/Andy_Meyers.json');" href="#" class="ambassador">Andy Meyers - UC Berkeley</a>
+      <a onClick = "callTree('/Networks/TreeJsons/Brooke_Willard.json');" href="#" class="ambassador">Brooke Willard - Michigan State University</a>
+      <a onClick = "callTree('/Networks/TreeJsons/Caitlin_Edwards.json');" href="#" class="ambassador">Caitlin Edwards - Ernst & Young</a>
+      <a onClick = "callTree('/Networks/TreeJsons/Daniel_Lu.json');" href="#" class="ambassador">Daniel Lu - Michigan State University</a>
+      <a onClick = "callTree('/Networks/TreeJsons/Doni_Yellin.json');" href="#" class="ambassador">Doni Yellin - Yale University</a>
+      <a onClick = "callTree('/Networks/TreeJsons/Eleanor_Herring.json');" href="#" class="ambassador">Eleanor Herring - Univerity of Pennsylvania</a>
+      <a onClick = "callTree('/Networks/TreeJsons/Gabby_Sadler.json');" href="#" class="ambassador">Gabby Sadler - University of Michigan</a>
+      <a onClick = "callTree('/Networks/TreeJsons/Joseph_Ucci.json');" href="#" class="ambassador">Joseph Ucci - Drexel University</a>
+      <a onClick = "callTree('/Networks/TreeJsons/Liuke_Yang.json');" href="#" class="ambassador">Liuke Yang - Vanderbilt University</a>
+      <a onClick = "callTree('/Networks/TreeJsons/Michael_Turnipseed.json');" href="#" class="ambassador">Michael Turnipseed - Auburn University</a>
+      <a onClick = "callTree('/Networks/TreeJsons/Noah_Carpenter.json');" href="#" class="ambassador">Noah Carpenter - University of Texas</a>
+      <a onClick = "callTree('/Networks/TreeJsons/Raamish_Saeed.json');" href="#" class="ambassador">Raamish Saeed - Saint Louis University</a>
+      <a onClick = "callTree('/Networks/TreeJsons/Samantha_Fischler.json');" href="#" class="ambassador">Samantha Fischler - Binghamton University (SUNY)</a>
+      <a onClick = "callTree('/Networks/TreeJsons/Thomas_Santarcangelo.json');" href="#" class="ambassador">Thomas Santarcangelo - University of Central Florida</a>
+      <a onClick = "callTree('/Networks/TreeJsons/Willis_Harkey.json');" href="#" class="ambassador">Willis Harkey - University of Alabama</a>
+      <a onClick = "callTree('/Networks/TreeJsons/Zachary_Ogden.json');" href="#" class="ambassador">Zachary Ogden - Boston College</a>
+    </div>
+  </div>
+
+  <div class="stackedbutton">
+    <div><button class= "expcol" onclick="c2(1)">Expand All</button></div>
+    <div></div>
+    <button class= "expcol" style="margin-top: 14.5px;"onclick="c2(-1)">Collapse All</button>
+  </div>
+    
+    <span class="instructions" id='myBtn'>Instructions</span>  
+  </div>
+
+</div> 
+<div class="boxed">
+  <div></div>
+  <h2 class="score">Composite Score:</h2>
+  <h2 class="score" id ='compscore' style="width:100px" ></h2>
+  <!-- <div></div> -->
+  <p class="score bar">|</p>
+  <h3 class="refer_score">Direct Referrals:</h3>
+  <h3 class="count_output" id ='directchildren'></h3>
+  
+  <h3 class="refer_score">Indirect Referrals:</h3>
+  <h3 class="count_output" id ='indirectchildren'></h3>
+  <h3 class ="refer_score">Network Depth:</h3>
+  <h3 class="count_output" id ='networkdepth'></h3>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Overview</h3>
+    <p>This tool is designed to allow the user to explore the referral network of a single subscriber. A deep network indicates that a subscriber has referred individuals who have actively referred other readers. </p>
+    <p></p>
+
+    <div>&nbsp;</div>
+    <p><b>Composite Score:</b> A score is derived from the number of direct referrals, indirect referrals, and network depth. </p>
+    <p><b>Direct Referrals:</b> How many referrals an individual has referred</p>
+    <p><b>Indirect Referrals:</b> How many referrals an individual's direct referrals have referred</p>
+    <p><b>Network Depth:</b> How deep the network extends</p>
+    <p> </p>
+    
+    <div>&nbsp;</div>
+    <h3>Instructions & Tips</h3> 
+    <ul>
+      <li>Click on Ambassador Search to begin searching through users</li>
+      <li>Double clicking on a user in the dropdown will expand the entire network.</li>
+      <ul>
+        <li>Additional buttons to expand and collapse all are available </li></ul>
+        <li>Search capability is built in allowing the user to filter for specific user</li>
+
+      </ul>
+    </div>
+
+  </div>
+
+<script type="text/javascript">
+
+// Set the dimensions and margins of the diagram
+var margin = {top: 20, right: 90, bottom: 30, left: 200},
+width = 2000 - margin.left - margin.right,
+height = 900 - margin.top - margin.bottom;
+
+// append the svg object to the body of the page
+// appends a 'group' element to 'svg'
+// moves the 'group' element to the top left margin
+var svg = d3.select("body").append("svg")
+.attr("width", width + margin.right + margin.left)
+.attr("height", height + margin.top + margin.bottom)
+.append("g")
+.attr("transform", "translate("
+  + margin.left + "," + margin.top + ")");
+
+var i = 0,
+duration = 500,
+root;
+
+//----
+
+
+// d3.json(url, function(error, treeData) {
+//   if (error) throw error;
+//     root = d3.hierarchy(treeData, function(d) { return d.children; });
+//     root.x0 = height / 2;
+//     root.y0 = 0;
+
+//   function collapse(d) {
+//     if (d.children) {
+//       d._children = d.children;
+//       d._children.forEach(collapse);
+//       d.children = null;
+//     }
+//   }
+
+
+//   root.children.forEach(collapse);
+//   update(root);
+// });
+
+//------
+
+// // declares a tree layout and assigns the size
+
+$('a.ambassador').dblclick(function(){c2(0);
+  c2(1);});
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
