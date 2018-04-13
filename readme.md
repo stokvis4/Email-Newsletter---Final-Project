@@ -10,12 +10,12 @@ For this final project, I wanted to create a suite of solutions that an email ne
 ## Packages & Tools Used
 PostgreSQL
 Python
-	* Pandas
-	* Numpy
-	* Matplotlib
-	* SqlAlchemy
-	* SKLearn
-	* NetworkX
+* Pandas
+* Numpy
+* Matplotlib
+* SqlAlchemy
+* SKLearn
+* NetworkX
 
 ## Sample Code
 
