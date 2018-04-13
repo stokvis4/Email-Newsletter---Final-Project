@@ -94,3 +94,6 @@ for row, ser in df_pivot_last_emails_dropped_pivot.iterrows():
 
 ## Presentation & Video
 Please take a look through the presentation file [here](https://github.com/stokvis4/projectKojak/blob/master/presentation/projectKojak.pdf) as well as the video of the D3.js animation [here](https://github.com/stokvis4/projectKojak/blob/master/presentation/ReferralNetDemo.mov)
+
+## Privacy Notice
+All references of the company that I used are removed and to protect their data, I have not included versions of the pickles I created.
